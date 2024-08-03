@@ -104,7 +104,7 @@ a:hover{
     .burger-menu {
         top:20px;
         left:10px;
-        color:black;
+        color:#00FFFF;
         display: block;
         position: fixed;
         cursor: pointer;
