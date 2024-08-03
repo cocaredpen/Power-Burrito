@@ -186,9 +186,10 @@ article{
 }
 .gifmuscle{
     width: 100%;
-    padding-top: 5%;
+    margin-top: 5%;
     border-radius: 10%;
     margin-left: 2%;
+    box-shadow: 6px 6px 16px rgba(191, 161, 129, 0.5);
 }
 @media (max-width:400px) {
     .gifmuscle{
