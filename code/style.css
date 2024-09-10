@@ -264,9 +264,13 @@ h2{
 }
 .horaire{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
     padding:5%;
+    text-align: center;
+}
+.horaire>div{
+    margin:2%;
 }
 .allergene{
     display: flex;
@@ -278,4 +282,32 @@ h2{
 }
 p,h1,h2,h3, li{
     color: #BFA181;
+}
+.button {
+    display: inline-block;         /* Cela permet de contrôler la taille et les marges */
+    padding: 10px 20px;            /* Espace intérieur (padding) pour donner l'aspect d'un bouton */
+    background-color: #2F4F4F;     /* Couleur de fond */
+    color: #BFA181;                  /* Couleur du texte */
+    text-decoration: none;         /* Retire le soulignement du lien */
+    border-radius: 5px;            /* Bordure arrondie */
+    font-size: 24px;               /* Taille de la police */
+    text-align: center;            /* Centre le texte */
+    transition: background-color 0.3s ease; /* Transition pour un effet doux au hover */
+    width: min-content;
+    margin-bottom: 10%;
+
+  }
+.button:hover {
+    background-color: #00FFFF;     /* Couleur de fond au survol */
+    color: red;
+}
+
+.commande{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.insta{
+    width: 50px;
 }
