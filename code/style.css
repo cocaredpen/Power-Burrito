@@ -9,6 +9,9 @@
   .logo{
     width: 150px;
   }
+.insta{
+    width: 50px;
+}
 nav{
     background-color: #2F4F4F ;
 }
@@ -307,7 +310,4 @@ p,h1,h2,h3, li{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-}
-.insta{
-    width: 50px;
 }
