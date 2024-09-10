@@ -259,6 +259,15 @@ h2{
 .superoïdes, .natties{
     margin: 5%;
 }
+.explain{
+    text-align: center;
+}
+.horaire{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding:5%;
+}
 .allergene{
     display: flex;
     flex-flow: row wrap;
