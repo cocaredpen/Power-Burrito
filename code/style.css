@@ -311,3 +311,16 @@ p,h1,h2,h3, li{
     justify-content: center;
     align-items: center;
 }
+.orderbutton{
+    position: -webkit-sticky; /* Pour Safari */
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+}
+.orderbutton>a{
+    margin: 3%;
+}
