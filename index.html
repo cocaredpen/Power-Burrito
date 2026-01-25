@@ -1,359 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power Burrito - Nutrition Sportive Premium</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Burritos congelés riches en protéines pour athlètes. Repas sains, équilibrés et prêts en 10 minutes. Bœuf, poulet, thon - nutrition optimale pour vos performances.">
-    <meta name="keywords" content="burrito protéiné, nutrition sportive, repas fitness, alimentation athlète, protéines, repas congelé sain">
-    <meta name="author" content="Power Burrito">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="picture/Burrito_texte.png" type="image/png">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="code/style.css" rel="stylesheet">
+        <meta name="description" content="Découvrez nos burritos riches en protéines, sains et équilibrés, parfaits pour les athlètes. 🌯💪 
+        Composés de riz, légumes, épices, protéines (bœuf, thon, poulet) 
+        et fromage maigre, ils sont vendus congelés pour une fraîcheur optimale. Idéals pour une collation rapide et nutritive !">
+        <meta name="keywords" content="Burritos riches en protéines, alimentation saine, nutrition sportive, collation équilibrée, ingrédients de qualité, repas congelés, prêt à manger, repas pour athlètes, 
+        protéines (bœuf, thon, poulet), fromage maigre, repas pratiques, fitness food, alimentation fitness, fresh and healthy, high-protein meal.">
+        <meta name="author" content="Matteo Di Leto">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="code/script.js" defer></script>
+        <link rel="icon" href="picture/Burrito_texte.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Sedan&display=swap" rel="stylesheet">
+        <meta name="generator" content="Visual Studio Code">
+        <title>Power Burrito </title>
+    </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-brand">
-                    <img src="picture/Burrito_sanstexte.png" alt="Power Burrito Logo" class="logo-img">
-                    <span class="brand-name">POWER BURRITO</span>
-                </div>
-                
-                <button class="nav-toggle" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                
-                <ul class="nav-menu">
-                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
-                    <li><a href="#produits" class="nav-link">Nos Burritos</a></li>
-                    <li><a href="#avantages" class="nav-link">Avantages</a></li>
-                    <li><a href="html/allergene.html" class="nav-link">Allergènes</a></li>
-                    <li><a href="mailto:powerburritoinfo@gmail.com" class="nav-link">Contact</a></li>
-                    <li>
-                        <a href="https://www.instagram.com/power.burrito/" target="_blank" class="social-link" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="accueil" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-line">BOOST</span>
-                    <span class="title-line highlight">YOUR PROTEIN</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Des burritos congelés riches en protéines, conçus pour les athlètes qui refusent de choisir entre performance et saveur.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">30g+</span>
-                        <span class="stat-label">Protéines</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">10min</span>
-                        <span class="stat-label">Prêt</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Naturel</span>
+    <nav>
+        <img class="logo" id="logophone" src="picture/Burrito_sanstexte.png" alt="burrito musclé posant comme zizz">
+        <ul class="nav">
+            <li><img class="logo" src="picture/Burrito_texte.png" alt="burrito musclé posant comme zizz"></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="code/html/order.html">Commandez</a></li>
+            <ul class="menu">
+                <li>
+                    <a href="code/html/menu.html">Burritos ▼</a>
+                    <ul>
+                        <li><a href="code/html/menu.html#superoides">Maxi-Prot</a></li>
+                        <li><a href="code/html/menu.html#natties">Natties</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <li><a href="code/html/allergene.html">Allergène</a></li>
+            <li><a href="mailto:powerburritoinfo@gmail.com">Contact</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/power.burrito/"><img class="insta"  src="picture/insta.png" alt="logo instagram"></a></li>
+        </ul>
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+    </nav>
+    <main>
+        <article>
+            <h1>Power Burrito : Boost Your Protein </h1>
+            <section class="introsplit">
+                <div>
+                    <h2 class="firsth2">Cher Athèlte</h2>
+                    <div class="textsplit">
+                        <p>
+                            Le sport est essentiel pour un corps sain et un esprit équilibré. Cependant, 
+                            bien se nourrir peut devenir un véritable défi dans notre quotidien chargé. Entre travail, entraînements 
+                            et obligations familiales, opter pour des repas équilibrés semble souvent impossible. Pourtant, 
+                            une bonne alimentation est cruciale pour optimiser les performances et la récupération. 
+                            Comment alors concilier facilement sport et nutrition saine ? Voilà ma réponse.
+                            <!-- Toi qui lis ça, nous sommes condamné à être libre -->
+                        </p>
                     </div>
                 </div>
-                <a href="https://www.foodbooking.com/ordering/restaurant/menu?company_uid=032bf9d9-16a3-4fab-80f8-46f597ceaa49&restaurant_uid=cfa0b61d-0c80-4502-85f0-cbd4491f30f6&facebook=true" 
-                   target="_blank" 
-                   class="cta-button">
-                    Commander maintenant
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M10 0L8.59 1.41L16.17 9H0V11H16.17L8.59 18.59L10 20L20 10L10 0Z"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="picture/Burrito-6.jpg" alt="Burrito Power Burrito" class="hero-img">
-                    <div class="image-glow"></div>
+                <div>
+                    <img class="gifmuscle" src="picture/run_triangle.jpg" alt="athlètes courant sur piste">
                 </div>
-            </div>
-        </div>
-        <div class="hero-background">
-            <div class="bg-shape shape-1"></div>
-            <div class="bg-shape shape-2"></div>
-            <div class="bg-shape shape-3"></div>
-        </div>
-    </section>
-
-    <!-- Problem Statement -->
-    <section class="problem-section">
-        <div class="container">
-            <div class="problem-content">
-                <div class="problem-text">
-                    <h2 class="section-title">Le Défi de l'Athlète Moderne</h2>
-                    <p class="section-description">
-                        Entre entraînements intenses, obligations professionnelles et vie personnelle, 
-                        maintenir une alimentation riche en protéines et saine devient un véritable parcours du combattant.
+            </section>
+            <section class="presentation">
+                <div>
+                    <h2 style="font-weight: bold;">Burrito protéiné</h2>
+                    <p>
+                        Stockez des <strong>burritos surgelés</strong>, prêts à combler <strong>un manque de protéines</strong>. 
+                        Un repas sain, riche en protéines, prêt en <strong>10 minutes</strong> pour récompenser vos efforts de la journée:<br>voici vos héros.
                     </p>
-                    <div class="problem-list">
-                        <div class="problem-item">
-                            <div class="problem-icon">⏱️</div>
-                            <div class="problem-info">
-                                <h3>Manque de temps</h3>
-                                <p>Préparer des repas équilibrés demande du temps que vous n'avez pas</p>
-                            </div>
-                        </div>
-                        <div class="problem-item">
-                            <div class="problem-icon">💪</div>
-                            <div class="problem-info">
-                                <h3>Besoins protéiques élevés</h3>
-                                <p>Difficile d'atteindre vos objectifs nutritionnels au quotidien</p>
-                            </div>
-                        </div>
-                        <div class="problem-item">
-                            <div class="problem-icon">🍽️</div>
-                            <div class="problem-info">
-                                <h3>Options limitées</h3>
-                                <p>Les repas rapides sacrifient souvent la qualité nutritionnelle</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="problem-visual">
-                    <img src="picture/run_triangle.jpg" alt="Athlètes en action" class="problem-img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="produits" class="products-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Notre Gamme</h2>
-                <p class="section-subtitle">Des burritos conçus pour vos performances</p>
-            </div>
-            
-            <div class="products-grid">
-                <!-- Product Card 1 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <img src="picture/p_b_c.jpg" alt="Burrito Bœuf" loading="lazy" data-src="picture/p_b_c.jpg">
-                        <span class="product-badge">Best-seller</span>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Maxi-Prot Poulet cacahuète</h3>
-                        <p class="product-description">
-                            Poulet haché assaisonné, fromage allégé, courgettes fraîches, éclats de cacahuètes, relevé d'une touche de curry.
-                        <div class="product-nutrition">
-                            <span class="nutrition-item">
-                                <strong>617</strong> kcal
-                            </span>
-                            <span class="nutrition-item">
-                                <strong>34,4g</strong> protéines
-                            </span>
-                            <span class="nutrition-item">
-                                <strong>28,3g</strong> lipides
-                            </span>
-                            <span class="nutrition-item">
-                                <strong>58,9g</strong> glucides
-                            </span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Product Card 2 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <img src="picture/t_h.jpg" alt="Burrito Poulet" loading="lazy" data-src="picture/t_h.jpg">
-                        <span class="product-badge new">Nouveau</span>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Maxi-Prot Tex-Mex</h3>
-                        <p class="product-description">
-                            Poulet Tex-Mex légérement épicé, aubergines grillées, potatoes de patate douce croustillantes, fromage à raclette fondant.
-                        </p>
-                        <div class="product-nutrition">
-                             <span class="nutrition-item">
-                                <strong>528</strong> kcal
-                            </span>
-                            <span class="nutrition-item">
-                                <strong>38,3g</strong> protéines
-                            </span>
-                            <span class="nutrition-item">
-                                <strong>13,2g</strong> lipides
-                            </span>
-                            <span class="nutrition-item">
-                                <strong>52,2g</strong> glucides
-                            </span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Product Card 3 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <img src="picture/Vege.jpg" alt="Burrito Végétarien" loading="lazy" style="object-position: center bottom;" data-src="picture/Vege.jpg">
-                        <span class="product-badge veggie">Végé</span>
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Natty Végé</h3>
-                        <p class="product-description">
-                            Boulettes végétaliennes, fromage maigre, Gouda, omelette, coleslaw maison (chou blanc, carottes, lentilles, graines de chia).
-                        </p>
-                        <div class="product-nutrition">
-                            <span class="nutrition-item">
-                                <strong>380</strong> kcal
-                            </span>
-                            <span class="nutrition-item">
-                                <strong>40,3g</strong> protéines
-                            </span>
-                            <span class="nutrition-item">
-                                <strong>20,6g</strong> lipides
-                            </span>
-                            <span class="nutrition-item">
-                                <strong>46,6g</strong> glucides
-                            </span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="products-cta">
-                <a href="html/menu.html" class="secondary-button">Voir tous nos burritos</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section id="avantages" class="benefits-section">
-        <div class="container">
-            <h2 class="section-title">Pourquoi Power Burrito ?</h2>
-            
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">🥇</div>
-                    <h3>Qualité Premium</h3>
-                    <p>Ingrédients sélectionnés avec soin, sans conservateurs artificiels</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
-                    <h3>Prêt en 10 min</h3>
-                    <p>Du congélateur à l'assiette en un temps record</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">💪</div>
-                    <h3>Riche en Protéines</h3>
-                    <p>Jusqu'à 35g de protéines par burrito</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">🌱</div>
-                    <h3>Équilibré</h3>
-                    <p>Macros optimisés pour vos performances sportives</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">❄️</div>
-                    <h3>Fraîcheur Garantie</h3>
-                    <p>Congelés immédiatement après préparation</p>
-                </div>
-                
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎯</div>
-                    <h3>Pour Athlètes</h3>
-                    <p>Conçu par des athlètes pour la performance</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">Prêt à Booster Vos Performances ?</h2>
-                <p class="cta-text">
-                    Commandez maintenant et recevez vos burritos congelés directement chez vous. 
-                    Livraison rapide garantie.
-                </p>
-                <a href="https://www.foodbooking.com/ordering/restaurant/menu?company_uid=032bf9d9-16a3-4fab-80f8-46f597ceaa49&restaurant_uid=cfa0b61d-0c80-4502-85f0-cbd4491f30f6&facebook=true" 
-                   target="_blank" 
-                   class="cta-button large">
-                    Commander maintenant
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <p class="footer-tagline">Nutrition sportive premium</p>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Navigation</h4>
-                        <ul>
-                            <li><a href="#accueil">Accueil</a></li>
-                            <li><a href="#produits">Nos Burritos</a></li>
-                            <li><a href="html/menu.html">Menu Complet</a></li>
-                            <li><a href="html/allergene.html">Allergènes</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li><a href="mailto:powerburritoinfo@gmail.com">Email</a></li>
-                            <li><a href="https://www.instagram.com/power.burrito/" target="_blank">Instagram</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=61567682770695" target="_blank">Facebook</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2026 Power Burrito. Tous droits réservés.</p>
-                <p class="footer-credit">Design par Di Leto Matteo</p>
-            </div>
-        </div>
+                <img class="picturePresentation" src="picture/Burrito-6.jpg" alt="Burrito coupé en deux ampilé en pyramide">
+            </section>
+        </article>
+        <article class="orderbutton">
+            <a class="button" target="_blank" 
+            href="https://www.foodbooking.com/ordering/restaurant/menu?company_uid=032bf9d9-16a3-4fab-80f8-46f597ceaa49&restaurant_uid=cfa0b61d-0c80-4502-85f0-cbd4491f30f6&facebook=true">
+                Commandez</a>
+        </article>
+    </main>
+    <footer>
+        <p style="text-align: center;">Design by Di Leto Matteo</p>
     </footer>
-
-    <!-- Floating Order Button (Mobile) -->
-    <a href="https://www.foodbooking.com/ordering/restaurant/menu?company_uid=032bf9d9-16a3-4fab-80f8-46f597ceaa49&restaurant_uid=cfa0b61d-0c80-4502-85f0-cbd4491f30f6&facebook=true" 
-       target="_blank" 
-       class="floating-button" 
-       aria-label="Commander">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-        </svg>
-    </a>
-
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
 </body>
 </html>
